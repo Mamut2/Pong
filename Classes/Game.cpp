@@ -8,6 +8,7 @@ void Game::InitWindow()
 {
     this->videoMode = sf::VideoMode::getDesktopMode();
     this->window = new sf::RenderWindow(this->videoMode, "Pong", sf::Style::Fullscreen);
+    //this->window->setFramerateLimit(120);
 }
 
 void Game::InitVar()
@@ -181,6 +182,13 @@ void Game::Render()
 
     this->window->draw(this->scoreText1);
     this->window->draw(this->scoreText2);
+
+    // FPS
+    // sf::Text fps;
+    // fps.setFont(this->font);
+    // this->scoreText1.setCharacterSize(50);
+    // fps.setString(std::to_string(1.f / this->deltaTime));
+    // this->window->draw(fps);
 
     this->window->draw(this->ball);
     this->window->draw(this->player1);

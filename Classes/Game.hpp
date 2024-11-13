@@ -27,7 +27,7 @@ private:
     const float textOffset = 70.f;
     const float ballSize = 10.f;
     const float initialBallSpeed = 600.f;
-    const float ballSpeedGain = 100.f;
+    const float ballSpeedGain = 75.f;
     const sf::Vector2f playerSize = sf::Vector2f(10.f, 100.f);
     float ballSpeed = 600.f;
 
